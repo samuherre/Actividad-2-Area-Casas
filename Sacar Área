@@ -1,0 +1,31 @@
+import java.util.Scanner;
+  class Main {
+    public static void main(String[] args) {
+    // Definir Variables
+      float anchoC1, altoC1, areaC1;
+      float anchoC2, altoC2, areaC2;
+      float Total_area;
+      
+    // Datos del usuario casa 1
+      Scanner teclado = new Scanner(System.in);
+      System.out.println("Ingrese el ancho de la casa 1:");
+      anchoC1 = teclado.nextFloat();
+      System.out.println("Ingrese el alto de la casa 1:");
+      altoC1 = teclado.nextFloat();
+    // Proceso del area casa 1 
+      areaC1 = anchoC1 * altoC1;
+
+    // Datos del usuario casa 2
+      System.out.println("Ingrese el ancho de la casa 2:");
+      anchoC2 = teclado.nextFloat();
+      System.out.println("Ingrese el alto de la casa 2:");
+      altoC2 = teclado.nextFloat();
+    // Proceso del area casa 2
+      areaC2 = anchoC2 * altoC2;
+
+    // Proceso Areal Total
+      Total_area = areaC1 + areaC2;
+      System.out.println("Total de metros cuadrados requeridos para las dos casas:");
+      System.out.println(Total_area);
+  }
+}
